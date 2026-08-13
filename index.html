@@ -360,6 +360,184 @@
 
   .reveal { opacity: 0; }
 
+  .trusted-strip { padding: 32px 5% 40px; }
+  .trusted-shell {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(220px, 0.72fr) minmax(0, 1.28fr);
+    align-items: center;
+    gap: clamp(28px, 4vw, 56px);
+    padding: clamp(30px, 4vw, 48px);
+    overflow: hidden;
+    background: linear-gradient(120deg, var(--surface), var(--surface-2));
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xl);
+  }
+  .trusted-eyebrow {
+    margin-bottom: 10px;
+    color: var(--blue);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .trusted-intro h2 {
+    max-width: 320px;
+    margin-bottom: 10px;
+    color: var(--text);
+    font-family: 'Outfit', sans-serif;
+    font-size: clamp(26px, 3vw, 34px);
+    font-weight: 700;
+    letter-spacing: -1.1px;
+    line-height: 1.1;
+  }
+  .trusted-intro p:last-child {
+    max-width: 350px;
+    color: var(--text-muted);
+    font-size: 14.5px;
+    line-height: 1.6;
+  }
+  .trusted-carousel-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 18px;
+  }
+  .trusted-carousel-toggle {
+    display: inline-flex;
+    min-height: 38px;
+    align-items: center;
+    gap: 7px;
+    padding: 8px 12px;
+    color: var(--text-muted);
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    transition: border-color 0.18s ease, color 0.18s ease, background 0.18s ease;
+  }
+  .trusted-carousel-toggle:hover {
+    color: var(--blue);
+    background: var(--blue-light);
+    border-color: var(--blue);
+  }
+  .trusted-carousel-toggle svg { width: 13px; height: 13px; }
+  .trusted-carousel {
+    --trusted-gap: 16px;
+    min-width: 0;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 6%, #000 94%, transparent 100%);
+    mask-image: linear-gradient(90deg, transparent 0, #000 6%, #000 94%, transparent 100%);
+  }
+  .trusted-carousel__track {
+    display: flex;
+    width: max-content;
+    gap: var(--trusted-gap);
+    animation: trusted-carousel-scroll 26s linear 1s infinite;
+    will-change: transform;
+  }
+  .trusted-carousel__set {
+    display: flex;
+    flex: 0 0 auto;
+    gap: var(--trusted-gap);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .trusted-card {
+    width: clamp(164px, 15vw, 194px);
+    min-height: 238px;
+    overflow: hidden;
+    color: var(--trusted-card-ink);
+    background: var(--trusted-card-bottom);
+    border: 1px solid rgba(255,255,255,0.45);
+    border-radius: 18px;
+    box-shadow: 0 16px 32px rgba(11,18,32,0.18);
+  }
+  .trusted-card--titto {
+    --trusted-card-top: #E74339;
+    --trusted-card-bottom: #FFF5F3;
+    --trusted-card-ink: #34110E;
+    --trusted-card-top-ink: #FFFFFF;
+  }
+  .trusted-card--chunky {
+    --trusted-card-top: #FFD95B;
+    --trusted-card-bottom: #FFFBE7;
+    --trusted-card-ink: #2A220B;
+    --trusted-card-top-ink: #2A220B;
+  }
+  .trusted-card__top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    min-height: 142px;
+    padding: 15px;
+    background: var(--trusted-card-top);
+  }
+  .trusted-card__eyebrow {
+    color: var(--trusted-card-top-ink);
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    opacity: 0.72;
+    text-transform: uppercase;
+  }
+  .trusted-card__logo {
+    display: flex;
+    width: 72px;
+    height: 72px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid rgba(11,18,32,0.08);
+    border-radius: 14px;
+    box-shadow: 0 8px 18px rgba(11,18,32,0.14);
+  }
+  .trusted-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .trusted-card__body {
+    display: flex;
+    min-height: 95px;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+  }
+  .trusted-card__name {
+    display: block;
+    color: var(--trusted-card-ink);
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.35px;
+    line-height: 1.15;
+  }
+  .trusted-card__type {
+    display: block;
+    margin-top: 6px;
+    color: var(--trusted-card-ink);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.35;
+    opacity: 0.72;
+  }
+  .trusted-carousel:hover .trusted-carousel__track {
+    animation-play-state: paused;
+  }
+  .trusted-carousel.is-paused .trusted-carousel__track {
+    animation-play-state: paused;
+  }
+  @keyframes trusted-carousel-scroll {
+    to { transform: translate3d(calc(-50% - (var(--trusted-gap) / 2)), 0, 0); }
+  }
+
   /* ── A SHIFT WITH COPO ───────────────────────────────── */
   .shift-story {
     display: grid;
@@ -510,6 +688,35 @@
     .showcase-grid { grid-template-columns: 1fr; gap: 32px; }
     .showcase-grid.reverse { direction: ltr; }
     .showcase-grid + .showcase-grid { margin-top: 56px; }
+  }
+
+  @media (max-width: 920px) {
+    .trusted-shell { grid-template-columns: 1fr; gap: 28px; }
+    .trusted-intro { text-align: center; }
+    .trusted-intro h2, .trusted-intro p:last-child { margin-left: auto; margin-right: auto; }
+  }
+
+  @media (max-width: 640px) {
+    .trusted-strip { padding: 20px 6% 40px; }
+    .trusted-shell { gap: 24px; padding: 28px 0; border-radius: 20px; }
+    .trusted-intro { padding: 0 20px; }
+    .trusted-carousel-controls { justify-content: center; }
+    .trusted-card { width: 164px; min-height: 226px; }
+    .trusted-card__top { min-height: 134px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .trusted-carousel-controls { display: none; }
+    .trusted-carousel {
+      overflow-x: auto;
+      -webkit-mask-image: none;
+      mask-image: none;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: thin;
+    }
+    .trusted-carousel__track { animation: none; }
+    .trusted-carousel__set[aria-hidden="true"] { display: none; }
+    .trusted-card { scroll-snap-align: start; }
   }
 
   /* ── DASHBOARD SECTION ──────────────────────────────── */
@@ -1485,6 +1692,7 @@
     </div>
   </section>
 
+
   <!-- FEATURES -->
   <section class="section" id="caracteristicas">
     <div class="shift-story">
@@ -1719,7 +1927,7 @@
   <section class="devices-section">
     <div class="section-head center reveal">
       <h2 class="section-title">El mismo Copo, en el equipo que ya tienes</h2>
-      <p class="section-sub">Computadora de mostrador, pantalla táctil all-in-one o tablet. Sin comprar hardware especializado.</p>
+      <p class="section-sub">Computadora de mostrador, pantalla táctil todo en uno o tablet. Sin comprar hardware especializado.</p>
     </div>
 
     <div class="devices-grid" role="group" aria-label="Selecciona un equipo compatible con Copo">
@@ -1730,7 +1938,7 @@
       </button>
       <button class="device-card reveal" type="button" data-device-card aria-pressed="false" aria-labelledby="device-title-aio" aria-describedby="device-detail-aio">
         <span class="device-card__media"><img src="assets/lifestyle/all-in-one.jpg" alt="" aria-hidden="true" loading="lazy" width="1264" height="843" /></span>
-        <span class="device-card__copy"><strong class="device-card__title" id="device-title-aio">Pantalla táctil all-in-one</strong><small class="device-card__detail" id="device-detail-aio">Todo táctil, limpio y con menos cables.</small></span>
+        <span class="device-card__copy"><strong class="device-card__title" id="device-title-aio">Pantalla táctil todo en uno</strong><small class="device-card__detail" id="device-detail-aio">Todo táctil, limpio y con menos cables.</small></span>
         <span class="device-card__status" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="m6 12.5 4 4L18.5 8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
       </button>
       <button class="device-card reveal" type="button" data-device-card aria-pressed="false" aria-labelledby="device-title-tablet" aria-describedby="device-detail-tablet">
@@ -1749,8 +1957,132 @@
     <div class="steps">
       <div class="step reveal"><div class="step-number">1</div><h3>Configura tu menú</h3><p>Agrega productos, precios, categorías y modificadores desde el panel del dueño. Tarda menos de 30 minutos.</p></div>
       <div class="step reveal"><div class="step-number">2</div><h3>Descarga en tu tablet</h3><p>Disponible en iOS y Android. Sin hardware especializado: tu tablet actual funciona perfectamente.</p></div>
-      <div class="step reveal"><div class="step-number">3</div><h3>Asigna tu equipo</h3><p>Cajeros con acceso al POS. El dueño con acceso completo a reportes. Cada quién ve solo lo que necesita.</p></div>
+      <div class="step reveal"><div class="step-number">3</div><h3>Asigna tu equipo</h3><p>Cajeros con acceso al POS. El dueño con acceso completo a reportes. Cada quien ve solo lo que necesita.</p></div>
       <div class="step reveal"><div class="step-number">4</div><h3>Empieza a vender</h3><p>Abre turno, selecciona productos y cobra. Las ventas quedan guardadas aunque se vaya el internet.</p></div>
+    </div>
+  </section>
+
+  <section class="trusted-strip" aria-labelledby="trusted-title">
+    <div class="trusted-shell">
+      <div class="trusted-intro">
+        <p class="trusted-eyebrow">Negocios locales</p>
+        <h2 id="trusted-title">Negocios que confían en Copo</h2>
+        <p>Operaciones reales que ya cobran, atienden y cierran turno con más claridad.</p>
+        <div class="trusted-carousel-controls">
+          <button class="trusted-carousel-toggle" id="trustedCarouselToggle" type="button" aria-pressed="false" aria-label="Pausar movimiento de negocios">
+            <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M7 5v10M13 5v10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <span>Pausar movimiento</span>
+          </button>
+        </div>
+      </div>
+      <div class="trusted-carousel" id="trustedCarousel" role="group" aria-label="Negocios que usan Copo">
+        <div class="trusted-carousel__track">
+          <ul class="trusted-carousel__set">
+            <li class="trusted-card trusted-card--titto">
+              <div class="trusted-card__top">
+                <span class="trusted-card__eyebrow">Negocio local</span>
+                <div class="trusted-card__logo">
+                  <img src="assets/trusted/titto-bros.jpg" alt="" aria-hidden="true" width="447" height="447" loading="lazy" />
+                </div>
+              </div>
+              <div class="trusted-card__body">
+                <span class="trusted-card__name">Titto Bros.</span>
+                <span class="trusted-card__type">Real Ice Cream</span>
+              </div>
+            </li>
+            <li class="trusted-card trusted-card--chunky">
+              <div class="trusted-card__top">
+                <span class="trusted-card__eyebrow">Negocio local</span>
+                <div class="trusted-card__logo">
+                  <img src="assets/trusted/chunky-dogs.jpg" alt="" aria-hidden="true" width="447" height="447" loading="lazy" />
+                </div>
+              </div>
+              <div class="trusted-card__body">
+                <span class="trusted-card__name">Chunky Dogs</span>
+                <span class="trusted-card__type">Restaurante</span>
+              </div>
+            </li>
+          </ul>
+          <ul class="trusted-carousel__set" aria-hidden="true">
+            <li class="trusted-card trusted-card--titto">
+              <div class="trusted-card__top">
+                <span class="trusted-card__eyebrow">Negocio local</span>
+                <div class="trusted-card__logo">
+                  <img src="assets/trusted/titto-bros.jpg" alt="" width="447" height="447" loading="lazy" />
+                </div>
+              </div>
+              <div class="trusted-card__body">
+                <span class="trusted-card__name">Titto Bros.</span>
+                <span class="trusted-card__type">Real Ice Cream</span>
+              </div>
+            </li>
+            <li class="trusted-card trusted-card--chunky">
+              <div class="trusted-card__top">
+                <span class="trusted-card__eyebrow">Negocio local</span>
+                <div class="trusted-card__logo">
+                  <img src="assets/trusted/chunky-dogs.jpg" alt="" width="447" height="447" loading="lazy" />
+                </div>
+              </div>
+              <div class="trusted-card__body">
+                <span class="trusted-card__name">Chunky Dogs</span>
+                <span class="trusted-card__type">Restaurante</span>
+              </div>
+            </li>
+          </ul>
+          <ul class="trusted-carousel__set" aria-hidden="true">
+            <li class="trusted-card trusted-card--titto">
+              <div class="trusted-card__top">
+                <span class="trusted-card__eyebrow">Negocio local</span>
+                <div class="trusted-card__logo">
+                  <img src="assets/trusted/titto-bros.jpg" alt="" width="447" height="447" loading="lazy" />
+                </div>
+              </div>
+              <div class="trusted-card__body">
+                <span class="trusted-card__name">Titto Bros.</span>
+                <span class="trusted-card__type">Real Ice Cream</span>
+              </div>
+            </li>
+            <li class="trusted-card trusted-card--chunky">
+              <div class="trusted-card__top">
+                <span class="trusted-card__eyebrow">Negocio local</span>
+                <div class="trusted-card__logo">
+                  <img src="assets/trusted/chunky-dogs.jpg" alt="" width="447" height="447" loading="lazy" />
+                </div>
+              </div>
+              <div class="trusted-card__body">
+                <span class="trusted-card__name">Chunky Dogs</span>
+                <span class="trusted-card__type">Restaurante</span>
+              </div>
+            </li>
+          </ul>
+          <ul class="trusted-carousel__set" aria-hidden="true">
+            <li class="trusted-card trusted-card--titto">
+              <div class="trusted-card__top">
+                <span class="trusted-card__eyebrow">Negocio local</span>
+                <div class="trusted-card__logo">
+                  <img src="assets/trusted/titto-bros.jpg" alt="" width="447" height="447" loading="lazy" />
+                </div>
+              </div>
+              <div class="trusted-card__body">
+                <span class="trusted-card__name">Titto Bros.</span>
+                <span class="trusted-card__type">Real Ice Cream</span>
+              </div>
+            </li>
+            <li class="trusted-card trusted-card--chunky">
+              <div class="trusted-card__top">
+                <span class="trusted-card__eyebrow">Negocio local</span>
+                <div class="trusted-card__logo">
+                  <img src="assets/trusted/chunky-dogs.jpg" alt="" width="447" height="447" loading="lazy" />
+                </div>
+              </div>
+              <div class="trusted-card__body">
+                <span class="trusted-card__name">Chunky Dogs</span>
+                <span class="trusted-card__type">Restaurante</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -1810,7 +2142,7 @@
             <div class="installation-percentage"><strong>60%</strong><span>9+ suc.</span></div>
           </div>
         </div>
-        <p style="font-size:12px; color:var(--slate-light); margin-top:14px; line-height:1.5;">El setup nunca incluye hardware (tablet, impresora, cajón). Sí incluye configuración, carga de menú y capacitación.</p>
+        <p style="font-size:12px; color:var(--slate-light); margin-top:14px; line-height:1.5;">La instalación nunca incluye hardware (tablet, impresora, cajón). Sí incluye configuración, carga de menú y capacitación.</p>
       </div>
     </div>
 
@@ -1837,7 +2169,7 @@
       </div>
       <div class="faq-item">
         <button class="faq-q" type="button"><span>¿Necesito hardware especial?</span><svg viewBox="0 0 20 20" fill="none"><path d="M10 4v12M4 10h12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
-        <div class="faq-a"><p>No. Copo corre en las tablets que ya tengas. El setup nunca incluye hardware (tablet, impresora térmica, cajón de dinero); tú lo pones y nosotros lo configuramos.</p></div>
+        <div class="faq-a"><p>No. Copo corre en las tablets que ya tengas. La instalación nunca incluye hardware (tablet, impresora térmica, cajón de dinero); tú lo pones y nosotros lo configuramos.</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-q" type="button"><span>¿Cuánto dura la capacitación para usar Copo?</span><svg viewBox="0 0 20 20" fill="none"><path d="M10 4v12M4 10h12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
@@ -2033,6 +2365,20 @@
       hamburgerBtn.setAttribute('aria-expanded', 'false');
     });
   });
+
+  /* ---------- TRUSTED CAROUSEL ---------- */
+  var trustedCarousel = document.getElementById('trustedCarousel');
+  var trustedCarouselToggle = document.getElementById('trustedCarouselToggle');
+  if (trustedCarousel && trustedCarouselToggle) {
+    trustedCarouselToggle.addEventListener('click', function () {
+      var paused = trustedCarousel.classList.toggle('is-paused');
+      trustedCarouselToggle.setAttribute('aria-pressed', paused ? 'true' : 'false');
+      trustedCarouselToggle.setAttribute('aria-label', paused ? 'Reanudar movimiento de negocios' : 'Pausar movimiento de negocios');
+      trustedCarouselToggle.innerHTML = paused
+        ? '<svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="m7 4 8 6-8 6V4z" fill="currentColor"/></svg><span>Reanudar movimiento</span>'
+        : '<svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M7 5v10M13 5v10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Pausar movimiento</span>';
+    });
+  }
 
   /* ---------- SNOWFLAKE FIELD ---------- */
   var snowField = document.getElementById('snow-field');
