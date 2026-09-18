@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Copo — El POS hecho para heladerías, cafeterías y pastelerías</title>
-<meta name="description" content="Copo es el punto de venta offline-first para heladerías, cafeterías y pastelerías en México. Cobra en segundos, controla tu cocina y tu caja, con o sin internet. Prueba gratis 7 días." />
+<title>Copo — Punto de venta para alimentos y bebidas de mostrador</title>
+<meta name="description" content="El punto de venta especializado en negocios de alimentos y bebidas de mostrador. Organiza pedidos, cobra y controla tu caja con Copo, incluso sin internet." />
 <meta name="theme-color" content="#0B1220" />
-<meta property="og:title" content="Copo — El POS hecho para heladerías, cafeterías y pastelerías" />
+<meta property="og:title" content="Copo — Punto de venta para alimentos y bebidas de mostrador" />
 <meta property="og:description" content="Cobra en segundos, controla tu cocina y tu caja, con o sin internet. Prueba gratis 7 días." />
 <meta property="og:type" content="website" />
 <link rel="icon" type="image/png" href="assets/brand/logo-mark.png" />
@@ -360,184 +360,6 @@
 
   .reveal { opacity: 0; }
 
-  .trusted-strip { padding: 32px 5% 40px; }
-  .trusted-shell {
-    max-width: 1180px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: minmax(220px, 0.72fr) minmax(0, 1.28fr);
-    align-items: center;
-    gap: clamp(28px, 4vw, 56px);
-    padding: clamp(30px, 4vw, 48px);
-    overflow: hidden;
-    background: linear-gradient(120deg, var(--surface), var(--surface-2));
-    border: 1px solid var(--border);
-    border-radius: var(--radius-xl);
-  }
-  .trusted-eyebrow {
-    margin-bottom: 10px;
-    color: var(--blue);
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-  }
-  .trusted-intro h2 {
-    max-width: 320px;
-    margin-bottom: 10px;
-    color: var(--text);
-    font-family: 'Outfit', sans-serif;
-    font-size: clamp(26px, 3vw, 34px);
-    font-weight: 700;
-    letter-spacing: -1.1px;
-    line-height: 1.1;
-  }
-  .trusted-intro p:last-child {
-    max-width: 350px;
-    color: var(--text-muted);
-    font-size: 14.5px;
-    line-height: 1.6;
-  }
-  .trusted-carousel-controls {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-top: 18px;
-  }
-  .trusted-carousel-toggle {
-    display: inline-flex;
-    min-height: 38px;
-    align-items: center;
-    gap: 7px;
-    padding: 8px 12px;
-    color: var(--text-muted);
-    background: transparent;
-    border: 1px solid var(--border);
-    border-radius: 999px;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 1;
-    transition: border-color 0.18s ease, color 0.18s ease, background 0.18s ease;
-  }
-  .trusted-carousel-toggle:hover {
-    color: var(--blue);
-    background: var(--blue-light);
-    border-color: var(--blue);
-  }
-  .trusted-carousel-toggle svg { width: 13px; height: 13px; }
-  .trusted-carousel {
-    --trusted-gap: 16px;
-    min-width: 0;
-    overflow: hidden;
-    -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 6%, #000 94%, transparent 100%);
-    mask-image: linear-gradient(90deg, transparent 0, #000 6%, #000 94%, transparent 100%);
-  }
-  .trusted-carousel__track {
-    display: flex;
-    width: max-content;
-    gap: var(--trusted-gap);
-    animation: trusted-carousel-scroll 26s linear 1s infinite;
-    will-change: transform;
-  }
-  .trusted-carousel__set {
-    display: flex;
-    flex: 0 0 auto;
-    gap: var(--trusted-gap);
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  .trusted-card {
-    width: clamp(164px, 15vw, 194px);
-    min-height: 238px;
-    overflow: hidden;
-    color: var(--trusted-card-ink);
-    background: var(--trusted-card-bottom);
-    border: 1px solid rgba(255,255,255,0.45);
-    border-radius: 18px;
-    box-shadow: 0 16px 32px rgba(11,18,32,0.18);
-  }
-  .trusted-card--titto {
-    --trusted-card-top: #E74339;
-    --trusted-card-bottom: #FFF5F3;
-    --trusted-card-ink: #34110E;
-    --trusted-card-top-ink: #FFFFFF;
-  }
-  .trusted-card--chunky {
-    --trusted-card-top: #FFD95B;
-    --trusted-card-bottom: #FFFBE7;
-    --trusted-card-ink: #2A220B;
-    --trusted-card-top-ink: #2A220B;
-  }
-  .trusted-card__top {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    min-height: 142px;
-    padding: 15px;
-    background: var(--trusted-card-top);
-  }
-  .trusted-card__eyebrow {
-    color: var(--trusted-card-top-ink);
-    font-size: 9px;
-    font-weight: 800;
-    letter-spacing: 0.1em;
-    opacity: 0.72;
-    text-transform: uppercase;
-  }
-  .trusted-card__logo {
-    display: flex;
-    width: 72px;
-    height: 72px;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    background: #fff;
-    border: 1px solid rgba(11,18,32,0.08);
-    border-radius: 14px;
-    box-shadow: 0 8px 18px rgba(11,18,32,0.14);
-  }
-  .trusted-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .trusted-card__body {
-    display: flex;
-    min-height: 95px;
-    flex-direction: column;
-    justify-content: center;
-    padding: 15px;
-  }
-  .trusted-card__name {
-    display: block;
-    color: var(--trusted-card-ink);
-    font-family: 'Outfit', sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: -0.35px;
-    line-height: 1.15;
-  }
-  .trusted-card__type {
-    display: block;
-    margin-top: 6px;
-    color: var(--trusted-card-ink);
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 1.35;
-    opacity: 0.72;
-  }
-  .trusted-carousel:hover .trusted-carousel__track {
-    animation-play-state: paused;
-  }
-  .trusted-carousel.is-paused .trusted-carousel__track {
-    animation-play-state: paused;
-  }
-  @keyframes trusted-carousel-scroll {
-    to { transform: translate3d(calc(-50% - (var(--trusted-gap) / 2)), 0, 0); }
-  }
-
   /* ── A SHIFT WITH COPO ───────────────────────────────── */
   .shift-story {
     display: grid;
@@ -688,35 +510,6 @@
     .showcase-grid { grid-template-columns: 1fr; gap: 32px; }
     .showcase-grid.reverse { direction: ltr; }
     .showcase-grid + .showcase-grid { margin-top: 56px; }
-  }
-
-  @media (max-width: 920px) {
-    .trusted-shell { grid-template-columns: 1fr; gap: 28px; }
-    .trusted-intro { text-align: center; }
-    .trusted-intro h2, .trusted-intro p:last-child { margin-left: auto; margin-right: auto; }
-  }
-
-  @media (max-width: 640px) {
-    .trusted-strip { padding: 20px 6% 40px; }
-    .trusted-shell { gap: 24px; padding: 28px 0; border-radius: 20px; }
-    .trusted-intro { padding: 0 20px; }
-    .trusted-carousel-controls { justify-content: center; }
-    .trusted-card { width: 164px; min-height: 226px; }
-    .trusted-card__top { min-height: 134px; }
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .trusted-carousel-controls { display: none; }
-    .trusted-carousel {
-      overflow-x: auto;
-      -webkit-mask-image: none;
-      mask-image: none;
-      scroll-snap-type: x mandatory;
-      scrollbar-width: thin;
-    }
-    .trusted-carousel__track { animation: none; }
-    .trusted-carousel__set[aria-hidden="true"] { display: none; }
-    .trusted-card { scroll-snap-align: start; }
   }
 
   /* ── DASHBOARD SECTION ──────────────────────────────── */
@@ -1623,6 +1416,8 @@
     .demo-nudge { top: 64px; left: 12px; right: 12px; max-width: 245px; }
   }
 </style>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/landing.css" />
 </head>
 <body>
 
@@ -1637,9 +1432,7 @@
   <ul class="nav-links">
     <li><a href="#producto">Producto</a></li>
     <li><a href="#demo">Demo interactiva</a></li>
-    <li><a href="#cocina">Cocina</a></li>
     <li><a href="#precios">Precios</a></li>
-    <li><a href="#como-funciona">Cómo funciona</a></li>
   </ul>
   <div class="nav-actions">
     <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar a modo oscuro" aria-pressed="false">
@@ -1647,7 +1440,7 @@
       <svg class="icon-moon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 1110.2 3.3a7 7 0 009.8 11.2z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
     </button>
     <a href="https://dashboard.copopos.com/" target="_blank" rel="noopener noreferrer" class="btn-ghost dashboard-link" aria-label="Abrir dashboard de Copo">Dashboard</a>
-    <button class="btn-nav" type="button" data-open-modal data-plan="Prueba gratis">Prueba gratis</button>
+    <a class="btn-nav" href="https://wa.me/529833240173" target="_blank" rel="noopener noreferrer">Hablemos <span aria-hidden="true">↗</span></a>
     <button class="hamburger" id="hamburgerBtn" type="button" aria-label="Abrir menú" aria-expanded="false">
       <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
     </button>
@@ -1667,31 +1460,32 @@
 <main id="main-content">
 
   <!-- HERO -->
-  <section class="hero">
-    <div id="snow-field" aria-hidden="true"></div>
-
-    <h1>El punto de venta hecho para heladerías, cafeterías y pastelerías</h1>
-
-    <p class="lead">Cobra en segundos, controla tu caja y tu cocina desde una sola app. Con o sin conexión. Sin curva de aprendizaje.</p>
-
-    <div class="hero-cta">
-      <button class="btn-primary" type="button" data-open-modal data-plan="Prueba gratis 7 días">
-        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M9 1l2.09 4.26L16 6.27l-3.5 3.41.83 4.82L9 12.22l-4.33 2.28.83-4.82L2 6.27l4.91-.71L9 1z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
-        Prueba gratis 7 días
-      </button>
-      <a href="#precios" class="btn-secondary">
-        Ver planes y precios
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="counter-scene" aria-hidden="true">
+      <img src="assets/lifestyle/mostrador-pc.jpg" alt="" width="1400" height="933" fetchpriority="high" />
     </div>
-
-    <div class="hero-visual">
-      <div class="hero-photo">
-        <img src="assets/lifestyle/mostrador-pc.jpg" alt="Copo POS funcionando en una computadora de mostrador dentro de una cafetería" width="1400" height="933" data-scroll-depth="18" />
+    <div class="hero-copy">
+      <span class="hero-badge"><span></span> Tu mostrador. Todo bajo control.</span>
+      <h1 id="hero-title">Tú pones el <em>sabor.</em><br />Copo, el orden.</h1>
+      <p class="lead">El punto de venta para negocios de alimentos y bebidas de mostrador. Cobra, organiza pedidos y cierra tu caja con claridad. Incluso sin internet.</p>
+      <div class="hero-cta">
+        <a class="hero-contact" href="https://wa.me/529833240173?text=Hola%2C%20quiero%20conocer%20Copo%20para%20mi%20negocio." target="_blank" rel="noopener noreferrer">Conoce Copo por WhatsApp <span aria-hidden="true">↗</span></a>
+        <a class="hero-demo" href="#demo">Explorar la demo <span aria-hidden="true">→</span></a>
+      </div>
+      <p class="hero-specialties">Cafeterías · Heladerías · Reposterías · Snacks y comida rápida</p>
+    </div>
+    <div class="product-window">
+      <div class="product-window-bar"><span class="preview-brand"><img src="assets/brand/logo-mark.png" alt="" width="24" height="24" /> Tu día, más simple</span><span class="preview-label">Así se ve Copo</span><a href="#demo" aria-label="Probar el punto de venta en la demo">Probar demo <span aria-hidden="true">↗</span></a></div>
+      <div class="product-window-content">
+        <img class="pos-preview" src="assets/screenshots/pos.jpg" alt="Punto de venta de Copo: catálogo de alimentos y bebidas, productos y carrito para cobrar" width="1600" height="1000" />
+        <aside class="preview-benefits" aria-label="Funciones de Copo">
+          <div><span class="benefit-number">HECHO PARA TU MOSTRADOR</span><h2>Cada pedido,<br />a tu manera.</h2><p>Tamaños, sabores y extras. Todo en la misma orden.</p></div>
+          <div class="benefit-offline"><span aria-hidden="true">✓</span><div><strong>¿Sin conexión?</strong><p>Sigue vendiendo. Copo sincroniza al volver.</p></div></div>
+        </aside>
       </div>
     </div>
+    <button class="scene-toggle" id="sceneToggle" type="button" aria-pressed="false" aria-label="Pausar movimiento del fondo"><span aria-hidden="true">Ⅱ</span> Pausar fondo</button>
   </section>
-
 
   <!-- FEATURES -->
   <section class="section" id="caracteristicas">
@@ -1725,7 +1519,7 @@
   <!-- PRODUCT SHOWCASE -->
   <section class="showcase" id="producto">
     <div class="section-head center reveal">
-      <h2 class="section-title">Cobrar nunca había sido tan rápido</h2>
+      <h2 class="section-title">Un punto de venta que entiende tu menú</h2>
       <p class="section-sub">El catálogo completo en una sola pantalla. Carrito a la derecha. Cero pasos innecesarios.</p>
     </div>
 
@@ -1897,7 +1691,7 @@
 
   <!-- KITCHEN -->
   <section class="kitchen-section" id="cocina">
-    <h2 class="section-title">Tu cocina siempre en control</h2>
+    <h2 class="section-title">Del mostrador a cocina, sin perder el pedido</h2>
     <p class="section-sub">Una pantalla dedicada al área de preparación. Sin papel, sin gritos, sin órdenes perdidas.</p>
 
     <div class="kanban" data-scroll-sequence>
@@ -1951,146 +1745,51 @@
 
   <!-- HOW IT WORKS -->
   <section class="how" id="como-funciona">
-    <h2 class="section-title">Listo para vender en minutos</h2>
+    <h2 class="section-title">De tu menú a tu primera venta</h2>
     <p class="section-sub" style="max-width: 480px; margin: 0 auto;">Sin instalaciones complicadas. Sin capacitación larga. Sin dependencia del proveedor.</p>
 
     <div class="steps">
-      <div class="step reveal"><div class="step-number">1</div><h3>Configura tu menú</h3><p>Agrega productos, precios, categorías y modificadores desde el panel del dueño. Tarda menos de 30 minutos.</p></div>
+      <div class="step reveal"><div class="step-number">1</div><h3>Configura tu menú</h3><p>Organiza productos, precios, tamaños y extras desde el panel del dueño.</p></div>
       <div class="step reveal"><div class="step-number">2</div><h3>Descarga en tu tablet</h3><p>Disponible en iOS y Android. Sin hardware especializado: tu tablet actual funciona perfectamente.</p></div>
       <div class="step reveal"><div class="step-number">3</div><h3>Asigna tu equipo</h3><p>Cajeros con acceso al POS. El dueño con acceso completo a reportes. Cada quien ve solo lo que necesita.</p></div>
       <div class="step reveal"><div class="step-number">4</div><h3>Empieza a vender</h3><p>Abre turno, selecciona productos y cobra. Las ventas quedan guardadas aunque se vaya el internet.</p></div>
     </div>
   </section>
 
-  <section class="trusted-strip" aria-labelledby="trusted-title">
-    <div class="trusted-shell">
-      <div class="trusted-intro">
-        <p class="trusted-eyebrow">Negocios locales</p>
-        <h2 id="trusted-title">Negocios que confían en Copo</h2>
-        <p>Operaciones reales que ya cobran, atienden y cierran turno con más claridad.</p>
-        <div class="trusted-carousel-controls">
-          <button class="trusted-carousel-toggle" id="trustedCarouselToggle" type="button" aria-pressed="false" aria-label="Pausar movimiento de negocios">
-            <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M7 5v10M13 5v10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-            <span>Pausar movimiento</span>
-          </button>
-        </div>
+  <section class="local-businesses" id="negocios" aria-labelledby="trusted-title">
+    <div class="local-businesses__inner">
+      <div class="local-businesses__intro">
+        <span class="local-businesses__eyebrow">EN BUENA COMPAÑÍA</span>
+        <h2 id="trusted-title">Su especialidad es el sabor.<br /><span>La nuestra, su mostrador.</span></h2>
+        <p>Clientes de Copo y marcas ilustrativas de los negocios que podemos acompañar.</p>
       </div>
-      <div class="trusted-carousel" id="trustedCarousel" role="group" aria-label="Negocios que usan Copo">
-        <div class="trusted-carousel__track">
-          <ul class="trusted-carousel__set">
-            <li class="trusted-card trusted-card--titto">
-              <div class="trusted-card__top">
-                <span class="trusted-card__eyebrow">Negocio local</span>
-                <div class="trusted-card__logo">
-                  <img src="assets/trusted/titto-bros.jpg" alt="" aria-hidden="true" width="447" height="447" loading="lazy" />
-                </div>
-              </div>
-              <div class="trusted-card__body">
-                <span class="trusted-card__name">Titto Bros.</span>
-                <span class="trusted-card__type">Real Ice Cream</span>
-              </div>
-            </li>
-            <li class="trusted-card trusted-card--chunky">
-              <div class="trusted-card__top">
-                <span class="trusted-card__eyebrow">Negocio local</span>
-                <div class="trusted-card__logo">
-                  <img src="assets/trusted/chunky-dogs.jpg" alt="" aria-hidden="true" width="447" height="447" loading="lazy" />
-                </div>
-              </div>
-              <div class="trusted-card__body">
-                <span class="trusted-card__name">Chunky Dogs</span>
-                <span class="trusted-card__type">Restaurante</span>
-              </div>
-            </li>
-          </ul>
-          <ul class="trusted-carousel__set" aria-hidden="true">
-            <li class="trusted-card trusted-card--titto">
-              <div class="trusted-card__top">
-                <span class="trusted-card__eyebrow">Negocio local</span>
-                <div class="trusted-card__logo">
-                  <img src="assets/trusted/titto-bros.jpg" alt="" width="447" height="447" loading="lazy" />
-                </div>
-              </div>
-              <div class="trusted-card__body">
-                <span class="trusted-card__name">Titto Bros.</span>
-                <span class="trusted-card__type">Real Ice Cream</span>
-              </div>
-            </li>
-            <li class="trusted-card trusted-card--chunky">
-              <div class="trusted-card__top">
-                <span class="trusted-card__eyebrow">Negocio local</span>
-                <div class="trusted-card__logo">
-                  <img src="assets/trusted/chunky-dogs.jpg" alt="" width="447" height="447" loading="lazy" />
-                </div>
-              </div>
-              <div class="trusted-card__body">
-                <span class="trusted-card__name">Chunky Dogs</span>
-                <span class="trusted-card__type">Restaurante</span>
-              </div>
-            </li>
-          </ul>
-          <ul class="trusted-carousel__set" aria-hidden="true">
-            <li class="trusted-card trusted-card--titto">
-              <div class="trusted-card__top">
-                <span class="trusted-card__eyebrow">Negocio local</span>
-                <div class="trusted-card__logo">
-                  <img src="assets/trusted/titto-bros.jpg" alt="" width="447" height="447" loading="lazy" />
-                </div>
-              </div>
-              <div class="trusted-card__body">
-                <span class="trusted-card__name">Titto Bros.</span>
-                <span class="trusted-card__type">Real Ice Cream</span>
-              </div>
-            </li>
-            <li class="trusted-card trusted-card--chunky">
-              <div class="trusted-card__top">
-                <span class="trusted-card__eyebrow">Negocio local</span>
-                <div class="trusted-card__logo">
-                  <img src="assets/trusted/chunky-dogs.jpg" alt="" width="447" height="447" loading="lazy" />
-                </div>
-              </div>
-              <div class="trusted-card__body">
-                <span class="trusted-card__name">Chunky Dogs</span>
-                <span class="trusted-card__type">Restaurante</span>
-              </div>
-            </li>
-          </ul>
-          <ul class="trusted-carousel__set" aria-hidden="true">
-            <li class="trusted-card trusted-card--titto">
-              <div class="trusted-card__top">
-                <span class="trusted-card__eyebrow">Negocio local</span>
-                <div class="trusted-card__logo">
-                  <img src="assets/trusted/titto-bros.jpg" alt="" width="447" height="447" loading="lazy" />
-                </div>
-              </div>
-              <div class="trusted-card__body">
-                <span class="trusted-card__name">Titto Bros.</span>
-                <span class="trusted-card__type">Real Ice Cream</span>
-              </div>
-            </li>
-            <li class="trusted-card trusted-card--chunky">
-              <div class="trusted-card__top">
-                <span class="trusted-card__eyebrow">Negocio local</span>
-                <div class="trusted-card__logo">
-                  <img src="assets/trusted/chunky-dogs.jpg" alt="" width="447" height="447" loading="lazy" />
-                </div>
-              </div>
-              <div class="trusted-card__body">
-                <span class="trusted-card__name">Chunky Dogs</span>
-                <span class="trusted-card__type">Restaurante</span>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <div class="business-carousel" id="businessCarousel"><div class="business-carousel__track">
+      <ul class="local-businesses__list" aria-label="Clientes reales y marcas ilustrativas">
+        <li class="business-brand business-brand--titto">
+          <div class="business-brand__image"><img src="assets/trusted/titto-bros.jpg" alt="Logo de Titto Bros. Real Ice Cream" width="447" height="447" loading="lazy" /></div>
+          <div class="business-brand__caption"><h3>Titto Bros.</h3><span>Heladería · Real Ice Cream</span><small class="business-brand__label business-brand__label--client">Cliente de Copo</small></div>
+        </li>
+        <li class="business-brand business-brand--chunky">
+          <div class="business-brand__image"><img src="assets/trusted/chunky-dogs.jpg" alt="Logo de Chunky Dogs" width="447" height="447" loading="lazy" /></div>
+          <div class="business-brand__caption"><h3>Chunky Dogs</h3><span>Restaurante</span><small class="business-brand__label business-brand__label--client">Cliente de Copo</small></div>
+        </li>
+        <li class="business-brand"><div class="business-brand__image"><img src="assets/trusted/miga-miel.svg" alt="Logo ilustrativo de Miga &amp; Miel" width="220" height="220" loading="lazy" /></div><div class="business-brand__caption"><h3>Miga &amp; Miel</h3><span>Panadería</span><small class="business-brand__label">Marca ilustrativa</small></div></li>
+        <li class="business-brand"><div class="business-brand__image"><img src="assets/trusted/bruma.svg" alt="Logo ilustrativo de Bruma Café" width="220" height="220" loading="lazy" /></div><div class="business-brand__caption"><h3>Bruma Café</h3><span>Cafetería</span><small class="business-brand__label">Marca ilustrativa</small></div></li>
+        <li class="business-brand"><div class="business-brand__image"><img src="assets/trusted/nube-nieve.svg" alt="Logo ilustrativo de Nube de Nieve" width="220" height="220" loading="lazy" /></div><div class="business-brand__caption"><h3>Nube de Nieve</h3><span>Heladería</span><small class="business-brand__label">Marca ilustrativa</small></div></li>
+        <li class="business-brand"><div class="business-brand__image"><img src="assets/trusted/limon-lima.svg" alt="Logo ilustrativo de Limón Lima" width="220" height="220" loading="lazy" /></div><div class="business-brand__caption"><h3>Limón Lima</h3><span>Jugos y bebidas</span><small class="business-brand__label">Marca ilustrativa</small></div></li>
+        <li class="business-brand"><div class="business-brand__image"><img src="assets/trusted/santo-mordisco.svg" alt="Logo ilustrativo de Santo Mordisco" width="220" height="220" loading="lazy" /></div><div class="business-brand__caption"><h3>Santo Mordisco</h3><span>Snacks y hamburguesas</span><small class="business-brand__label">Marca ilustrativa</small></div></li>
+      </ul>
+      </div></div>
+      <div class="business-carousel-controls"><button type="button" id="businessCarouselToggle" aria-controls="businessCarousel" aria-pressed="false">Pausar movimiento</button></div>
+      <div class="local-businesses__footer"><p>Tu negocio también tiene un lugar aquí.</p><a href="https://wa.me/529833240173?text=Hola%2C%20quiero%20conocer%20Copo%20para%20mi%20negocio." target="_blank" rel="noopener noreferrer">Hablemos de tu mostrador <span aria-hidden="true">↗</span></a></div>
     </div>
   </section>
 
   <!-- PRICING -->
   <section class="pricing" id="precios">
     <div class="section-head center reveal">
-      <h2 class="section-title">Un precio simple, todo incluido</h2>
-      <p class="section-sub">Todo el IVA incluido. Sin letras chiquitas. Prueba 7 días gratis antes de pagar cualquier cosa.</p>
+      <h2 class="section-title">Elige cómo trabajas tu mostrador</h2>
+      <p class="section-sub">Planes por sucursal, con IVA incluido. Prueba Copo gratis durante 7 días. Consulta abajo el costo de instalación.</p>
     </div>
 
     <div class="billing-toggle">
@@ -2157,7 +1856,7 @@
     <div class="faq-list" style="margin-top: 40px;">
       <div class="faq-item">
         <button class="faq-q" type="button"><span>¿Qué pasa cuando termina mi prueba gratis?</span><svg viewBox="0 0 20 20" fill="none"><path d="M10 4v12M4 10h12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
-        <div class="faq-a"><p>Después de los 7 días, se activa tu mensualidad o tu cuenta se desconecta — tú decides. El límite de la prueba no se extiende, así que puedes probar Copo con calma sin presión de compra hasta que decidas.</p></div>
+        <div class="faq-a"><p>La prueba dura 7 días. Al terminar, decides si continúas con un plan de pago; si no lo contratas, el acceso se desactiva.</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-q" type="button"><span>¿Copo funciona sin internet?</span><svg viewBox="0 0 20 20" fill="none"><path d="M10 4v12M4 10h12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
@@ -2184,14 +1883,14 @@
 
   <!-- CTA FINAL -->
   <section class="cta-section" id="contacto">
-    <h2>¿Listo para modernizar tu heladería, cafetería o pastelería?</h2>
-    <p class="lead">Solicita tu prueba gratuita de 7 días. Sin tarjeta, sin compromiso.</p>
+    <h2>Tu próxima hora pico, con todo en orden.</h2>
+    <p class="lead">Cuéntanos qué sirves en tu mostrador. Te ayudamos a encontrar el plan para tu negocio y a probar Copo durante 7 días.</p>
     <div class="cta-buttons">
       <button class="btn-white" type="button" data-open-modal data-plan="Prueba gratis 7 días">
         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M9 1l2.09 4.26L16 6.27l-3.5 3.41.83 4.82L9 12.22l-4.33 2.28.83-4.82L2 6.27l4.91-.71L9 1z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
         Prueba gratis 7 días
       </button>
-      <a href="#precios" class="btn-outline-white">Ver planes y precios</a>
+      <a href="https://wa.me/529833240173" target="_blank" rel="noopener noreferrer" class="btn-outline-white">WhatsApp · 983 324 0173</a>
     </div>
   </section>
 
@@ -2205,7 +1904,7 @@
         <img src="assets/brand/logo-mark.png" alt="" aria-hidden="true" width="30" height="30" />
         <span>copo</span>
       </a>
-      <p>El punto de venta hecho para negocios de mostrador en México. Simple, rápido y offline-first.</p>
+      <p>Especializado en alimentos y bebidas de mostrador. De la primera orden al corte de caja, todo en su lugar.</p>
       <a class="footer-instagram" href="https://www.instagram.com/copoposmx?utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Visitar Instagram de Copo, arroba copoposmx">
         <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
           <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8" />
@@ -2225,7 +1924,7 @@
       <div class="footer-col">
         <h5>Empresa</h5>
         <a href="#como-funciona">Cómo funciona</a>
-        <a href="#contacto">Contacto</a>
+        <a href="https://wa.me/529833240173" target="_blank" rel="noopener noreferrer">WhatsApp · 983 324 0173</a>
         <a href="https://dashboard.copopos.com/" target="_blank" rel="noopener noreferrer">Dashboard</a>
       </div>
     </div>
@@ -2237,10 +1936,10 @@
 </footer>
 
 <!-- FAB -->
-<button class="fab" id="fabBtn" type="button" aria-label="Escríbenos" data-open-modal data-plan="Contacto rápido">
+<a class="fab" id="fabBtn" href="https://wa.me/529833240173" target="_blank" rel="noopener noreferrer" aria-label="Contactar a Copo por WhatsApp al 983 324 0173">
   <span class="fab-ring"></span>
   <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
-</button>
+</a>
 
 <!-- MODAL -->
 <div class="modal-backdrop" id="modalBackdrop">
@@ -2274,8 +1973,8 @@
         <input id="f-contacto" name="contacto" type="text" required placeholder="999 123 4567 o tú@correo.com" />
         <small>Te contactamos en menos de 24 horas hábiles.</small>
       </div>
-      <button class="modal-submit" type="submit">Enviar solicitud</button>
-      <p class="modal-note">Al enviar, se abrirá tu correo con los datos listos para mandarnos. No compartimos tu información con terceros.</p>
+      <button class="modal-submit" type="submit">Continuar en WhatsApp</button>
+      <p class="modal-note">Se abrirá WhatsApp con tu solicitud lista. Tú decides cuándo enviarla.</p>
     </form>
   </div>
 </div>
@@ -2365,20 +2064,6 @@
       hamburgerBtn.setAttribute('aria-expanded', 'false');
     });
   });
-
-  /* ---------- TRUSTED CAROUSEL ---------- */
-  var trustedCarousel = document.getElementById('trustedCarousel');
-  var trustedCarouselToggle = document.getElementById('trustedCarouselToggle');
-  if (trustedCarousel && trustedCarouselToggle) {
-    trustedCarouselToggle.addEventListener('click', function () {
-      var paused = trustedCarousel.classList.toggle('is-paused');
-      trustedCarouselToggle.setAttribute('aria-pressed', paused ? 'true' : 'false');
-      trustedCarouselToggle.setAttribute('aria-label', paused ? 'Reanudar movimiento de negocios' : 'Pausar movimiento de negocios');
-      trustedCarouselToggle.innerHTML = paused
-        ? '<svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="m7 4 8 6-8 6V4z" fill="currentColor"/></svg><span>Reanudar movimiento</span>'
-        : '<svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M7 5v10M13 5v10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Pausar movimiento</span>';
-    });
-  }
 
   /* ---------- SNOWFLAKE FIELD ---------- */
   var snowField = document.getElementById('snow-field');
@@ -2791,14 +2476,14 @@
   document.getElementById('leadForm').addEventListener('submit', function (e) {
     e.preventDefault();
     var data = new FormData(e.target);
-    var subject = encodeURIComponent('Solicitud Copo — ' + modalTitle.textContent.replace('Solicitar: ', ''));
+    var requestTitle = 'Solicitud Copo — ' + modalTitle.textContent.replace('Solicitar: ', '');
     var body = encodeURIComponent(
-      'Nombre: ' + data.get('nombre') + '\n' +
+      requestTitle + '\n' + 'Nombre: ' + data.get('nombre') + '\n' +
       'Negocio: ' + data.get('negocio') + '\n' +
       'Sucursales: ' + data.get('sucursales') + '\n' +
       'WhatsApp / correo: ' + data.get('contacto')
     );
-    window.location.href = 'mailto:hola@copo.mx?subject=' + subject + '&body=' + body;
+    window.location.href = 'https://wa.me/529833240173?text=' + body;
     closeModal();
     e.target.reset();
   });
@@ -3950,5 +3635,6 @@
 })();
 </script>
 
+<script src="assets/landing.js"></script>
 </body>
 </html>
