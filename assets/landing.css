@@ -157,3 +157,22 @@ html[data-theme="dark"] .hero-contact > span { background: #15243b15; }
  .business-carousel.is-ready .business-carousel__track { animation: none; transform: none; }
  .business-carousel__track > [aria-hidden="true"], .business-carousel-controls { display: none; }
 }
+
+/* ── DESCARGAR POS ─────────────────────────────────── */
+.download-section { padding: 104px 5%; background: var(--surface); }
+.download-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; max-width: 880px; margin: 48px auto 0; }
+.download-card { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; padding: 30px; border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--bg); box-shadow: var(--card-shadow); }
+.download-card__icon { display: grid; place-items: center; width: 48px; height: 48px; border-radius: 14px; background: var(--blue-light); }
+.download-card__icon svg { width: 24px; height: 24px; stroke: var(--blue); }
+.download-card h3 { margin: 6px 0 0; font-size: 22px; letter-spacing: -.03em; color: var(--text); }
+.download-card p { margin: 0; font-size: 14px; line-height: 1.6; color: var(--text-muted); }
+.download-card .btn-primary { margin-top: 8px; border-radius: 999px; font-size: 15px; min-height: 48px; }
+.download-card__note { font-size: 12px; line-height: 1.6; color: var(--text-muted); }
+.download-trust { margin: 28px auto 0; text-align: center; font-size: 13px; color: var(--text-muted); }
+.download-trust a { color: var(--blue); font-weight: 600; }
+.step p a { color: var(--blue); font-weight: 600; }
+@media (max-width: 760px) {
+  .download-grid { grid-template-columns: 1fr; max-width: 440px; }
+  .download-card { padding: 24px; }
+  .download-card .btn-primary { width: 100%; justify-content: center; }
+}
